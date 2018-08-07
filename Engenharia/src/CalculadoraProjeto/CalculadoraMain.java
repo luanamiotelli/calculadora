@@ -8,7 +8,6 @@ public class CalculadoraMain {
 
 		Calcula c = new Calcula();
 		
-		
 		int op = 5;
 		int num1 = 0;
 		int num2 = 0;
@@ -21,7 +20,9 @@ public class CalculadoraMain {
 					+ "4 - Divisão\n"
 					+ "5 - Encerrar"));
 	      
-	      while (op != 0) {
+	     
+	while (op != 0) {
+
     	if (op == 1) {
     		
     		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? \n\n"));
@@ -39,7 +40,7 @@ public class CalculadoraMain {
         		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? \n\n"));
         		num2 = op2;
         		
-  	    			int opera = c.subtrai(num1, num2);
+  	    		int opera = c.subtrai(num1, num2);
   	    			JOptionPane.showMessageDialog(null, opera);
 	    		break;
 	    		}
@@ -61,10 +62,11 @@ public class CalculadoraMain {
 		  	    			JOptionPane.showMessageDialog(null, opera);
 			    		break;
 			    		}
-		    	 	else{
+
+					else{
 				    		System.out.println("ERRO");
 				    		break;
 				    		}
-    }
-}
+   	 }
+	}
 }
