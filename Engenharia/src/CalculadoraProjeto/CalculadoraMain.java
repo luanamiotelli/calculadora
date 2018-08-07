@@ -21,5 +21,36 @@ public class CalculadoraMain {
 					+ "4 - Divisão\n"
 					+ "5 - Encerrar"));
 	      
+	      while (op != 0) {
+    	if (op == 1) {
+    		
+    		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? \n\n"));
+    		num1 = op2;
+    		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? \n\n"));
+    		num2 = op2;
+    		
+    			int opera = c.soma(num1, num2);
+    			JOptionPane.showMessageDialog(null, opera);
+    		break;
+    	}
+    	 	if (op == 2) {
+    	 		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? \n\n"));
+        		num1 = op2;
+        		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? \n\n"));
+        		num2 = op2;
+        		
+  	    			int opera = c.subtrai(num1, num2);
+  	    			JOptionPane.showMessageDialog(null, opera);
+	    		break;
+	    		}
+			if (op == 3) {
+	    	 		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? \n\n"));
+	        		num1 = op2;
+	        		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? \n\n"));
+	        		num2 = op2;
+	  	    			int opera = c.multiplica(num1, num2);
+	  	    			JOptionPane.showMessageDialog(null, opera);
+		    		break;
+	    	 	}
 	}
 }
