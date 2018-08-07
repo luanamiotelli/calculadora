@@ -52,5 +52,19 @@ public class CalculadoraMain {
 	  	    			JOptionPane.showMessageDialog(null, opera);
 		    		break;
 	    	 	}
-	}
+			if (op == 4) {
+		    	 		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? \n\n"));
+		        		num1 = op2;
+		        		op2=Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? \n\n"));
+		        		num2 = op2;
+		  	    			int opera = c.divide(num1, num2);
+		  	    			JOptionPane.showMessageDialog(null, opera);
+			    		break;
+			    		}
+		    	 	else{
+				    		System.out.println("ERRO");
+				    		break;
+				    		}
+    }
+}
 }
